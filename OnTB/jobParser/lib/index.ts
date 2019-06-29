@@ -12,7 +12,7 @@ export default function parse(input: string): string {
             }
         }
         else {
-            acc[dependentJob[0]] = acc[dependentJob[0]].concat(dependentJob[1]);
+            acc[dependentJob[0]] = [dependentJob[1]];
         }
         return acc;
     }, {} as Job)

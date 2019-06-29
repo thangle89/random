@@ -1,1 +1,1 @@
-export default function parse(): void;
+export default function parse(input: string): string;
