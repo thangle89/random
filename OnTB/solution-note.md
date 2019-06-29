@@ -27,4 +27,4 @@ Purpose: compute the array with each item is a job in order
 Consider `n` is the length of the array (each item contains job: `jobA => jobB`). So the complexity is
 - Loop through `n` ---> `O(n)`
     - For each item: find suitable position of `jobA` and `jobB` ---> `O(m)` with `m` is the current length of the array
-- Thus the total complexity of the algorithm is `O(m*n)` ~ `O(n^2)`. For large data, we may need to store the job in hash table so finding position of jobs could be improve.
+- Thus the total complexity of the algorithm is `O(m*n)` ~ `O(n^2)`. For large data, we may need to store the job in hash table so finding position of jobs could be improved.
