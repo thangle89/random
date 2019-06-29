@@ -15,12 +15,15 @@ To overcome these assumptions, the module can be extended to use some complex Re
 5/To run the module, for simplicity, I just implement `main.js` file that can be run with Nodejs and the file refers to the module directly. To run with web browser, I could publish the module to npm, then setup a simple react project to run it in a webpage.
 
 6/Algorithm description:
+
 Purpose: compute the array with each item is a job in order
-- First convert the input to array of jobs
-- For each item in the array, consider it has `jobA` depend `jobB`, then find a suitable position to insert 
+
+- Firstly, convert the input to array of jobs
+- For each item in the array, consider it has `jobA` depend on `jobB`, then find suitable positions to insert 
 `jobB` and `jobA`
 
 7/Complexity analysis:
+
 Consider `n` is the length of the array (each item contains job: `jobA => jobB`). So the complexity is
 - Loop through `n` ---> `O(n)`
     - For each item: find suitable position of `jobA` and `jobB` ---> `O(m)` with `m` is the current length of the array
